@@ -1,0 +1,719 @@
+/* ===================================================
+   PORTFÓLIO - GABRIELLY GUIMARÃES
+   Arquivo: style.css
+   =================================================== */
+
+/* Reset geral */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Corpo do site */
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#1E293B;
+
+}
+
+/* =======================
+        MENU
+======================= */
+
+header{
+
+    background:#0F172A;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 10%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#60A5FA;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:#60A5FA;
+
+}
+
+/* =======================
+       HERO
+======================= */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 10%;
+
+    min-height:80vh;
+
+}
+
+.texto{
+
+    width:55%;
+
+}
+
+.texto h1{
+
+    font-size:30px;
+
+    color:#2563EB;
+
+}
+
+.texto h2{
+
+    font-size:55px;
+
+    margin:10px 0;
+
+}
+
+.texto h3{
+
+    color:#64748B;
+
+    margin-bottom:25px;
+
+}
+
+.texto p{
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* Botão */
+
+.botao{
+
+    background:#2563EB;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    display:inline-block;
+
+}
+
+.botao:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-3px);
+
+}
+
+/* =======================
+        FOTO
+======================= */
+
+.foto{
+
+    width:40%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.foto img{
+
+    width:350px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #2563EB;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+/* =======================
+      RODAPÉ
+======================= */
+
+footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+/* =======================
+     RESPONSIVIDADE
+======================= */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.texto{
+
+    width:100%;
+
+}
+
+.foto{
+
+    width:100%;
+
+    margin-bottom:40px;
+
+}
+
+.foto img{
+
+    width:250px;
+
+    height:250px;
+
+}
+.texto h2{
+    font-size:40px;
+}
+}
+/*=========================
+        SOBRE MIM
+=========================*/
+
+.sobre{
+
+    width:80%;
+
+    margin:60px auto;
+
+}
+
+.sobre h1{
+
+    text-align:center;
+
+    color:#2563EB;
+
+    margin-bottom:30px;
+
+    font-size:42px;
+
+}
+
+.sobre p{
+
+    margin-bottom:20px;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/*=========================
+        CARDS
+=========================*/
+
+.hobbies{
+
+    width:90%;
+
+    margin:70px auto;
+
+}
+
+.hobbies h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#2563EB;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+     color:#2563EB;
+}          
+/*=========================
+      FORMAÇÃO
+=========================*/
+
+.formacao{
+
+width:85%;
+
+margin:60px auto;
+
+}
+
+.formacao h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+font-size:42px;
+
+color:#2563EB;
+
+}
+
+.bloco{
+
+background:white;
+
+padding:30px;
+
+margin-bottom:25px;
+
+border-radius:15px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.bloco h2{
+
+margin-bottom:20px;
+
+color:#2563EB;
+
+}
+
+.bloco ul{
+
+margin-left:20px;
+
+line-height:2;
+
+}
+
+/*=========================
+      HABILIDADES
+=========================*/
+
+.skills{
+
+width:85%;
+
+margin:60px auto;
+
+}
+
+.skills h2{
+
+text-align:center;
+
+margin-bottom:40px;
+
+color:#2563EB;
+
+}
+
+.skill{
+
+margin-bottom:25px;
+
+}
+
+.skill p{
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+.barra{
+
+height:18px;
+
+background:#ddd;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.html{
+
+width:90%;
+
+height:100%;
+
+background:#2563EB;
+
+}
+
+.css{
+
+width:85%;
+
+height:100%;
+
+background:#2563EB;
+
+}
+
+.javascript{
+
+width:70%;
+
+height:100%;
+
+background:#2563EB;
+
+}
+
+.sql{
+
+width:75%;
+
+height:100%;
+
+background:#2563EB;
+
+}    
+/*======================
+      PORTFÓLIO
+=======================*/
+
+.portfolio{
+
+width:90%;
+
+margin:60px auto;
+
+}
+
+.portfolio h1{
+
+text-align:center;
+
+font-size:42px;
+
+color:#2563EB;
+
+margin-bottom:20px;
+
+}
+
+.descricao{
+
+text-align:center;
+
+margin-bottom:50px;
+
+font-size:18px;
+
+}
+
+.projetos{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.projeto{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.projeto:hover{
+
+transform:translateY(-8px);
+
+}
+
+.projeto img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.projeto h2{
+
+padding:20px;
+
+color:#2563EB;
+
+}
+
+.projeto p{
+
+padding:0 20px 20px;
+
+line-height:1.7;
+
+}
+
+.projeto a{
+
+display:block;
+
+background:#2563EB;
+
+color:white;
+
+text-align:center;
+
+padding:15px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.projeto a:hover{
+
+background:#1D4ED8;
+
+}   
+/*======================
+        CONTATO
+=======================*/
+
+.contato{
+
+width:80%;
+
+margin:70px auto;
+
+text-align:center;
+
+}
+
+.contato h1{
+
+font-size:42px;
+
+color:#2563EB;
+
+margin-bottom:20px;
+
+}
+
+.contato p{
+
+margin-bottom:40px;
+
+}
+
+form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+input, textarea{
+
+padding:18px;
+
+font-size:16px;
+
+border:2px solid #CBD5E1;
+
+border-radius:10px;
+
+font-family:Poppins;
+
+}
+
+textarea{
+
+height:180px;
+
+resize:none;
+
+}
+
+button{
+
+background:#2563EB;
+
+color:white;
+
+border:none;
+
+padding:18px;
+
+font-size:18px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#1D4ED8;
+
+}
+
+#resultado{
+
+margin-top:30px;
+
+font-weight:bold;
+
+font-size:20px;
+
+color:green;
+
+}
